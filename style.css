@@ -24,11 +24,11 @@ body {
 }
 
 /* 首頁、關於我 導覽列 */
-#banner nav, #banner-about nav {
+#banner nav, #banner-about nav, #banner-contact nav {
     padding: 30px;  
 }
 
-#banner a, #banner-about a {
+#banner a, #banner-about a, #banner-contact a {
     color: white;
     /* 文字-裝飾：無 */
     text-decoration: none;
@@ -37,7 +37,7 @@ body {
     transition: 0.3s;
 }
 
-#banner a:hover, #banner-about a:hover {
+#banner a:hover, #banner-about a:hover, #banner-contact a:hover {
     color: #aaa;
 }
 
@@ -241,13 +241,11 @@ footer p {
     padding-left: 3px;
 }
 
-/* 關於我分頁 */
-/* 橫幅 */
 #banner-about {
     width: 100%;
     /* vh 螢幕高度 */
     height: 40vh;
-    background-image: url(./img/banner-about.jpg);
+    background-image: url(img/about.jpg);
     /* 背景-尺寸：填滿 - 50%、500px */
     background-size: cover;
     color: white;
@@ -256,7 +254,7 @@ footer p {
 }
 
 #banner-about nav {
-    backdrop-filter: opacity(90%);
+    backdrop-filter: opacity(95%);
 }
 
 #banner-about h2 {
@@ -266,6 +264,102 @@ footer p {
     letter-spacing: 20px;
     padding-left: 20px;
     line-height: 20vh;
-    backdrop-filter: opacity(90%);
+    backdrop-filter: opacity(95%);
     height: 30vh;
 }
+
+/* 關於我內文 */
+#about-content {
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 50px 80px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+#about-content h3 {
+    text-align: center;
+    padding: 20px;
+    color: #ddd;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+#about-content hr {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#about-content h1 {
+    text-align: center;
+    padding: 30px;
+    color: #aaa;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    font-weight: 100;
+}
+
+#about-content #about-1 {
+    height: 350px;
+    background-image: url(img/about-1.jpg);
+    background-size: cover;
+}
+
+#about-content #about-2 {
+    height: 350px;
+    background-image: url(img/about-2.jpg);
+    background-size: cover;
+}
+
+#about-content #about-3 {
+    height: 350px;
+    background-image: url(img/about-3.jpg);
+    background-size: cover;
+}
+
+#about-content p {
+    padding: 30px 0;
+    line-height: 2;
+    color: #888;
+}
+
+
+#banner-contact {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 40vh;
+    background-image: url(img/contact.jpg);
+    /* 背景-尺寸：填滿 - 50%、500px */
+    background-size: cover;
+    color: white;
+    /* 背景-附著：固定 */
+    background-attachment: fixed;
+}
+
+/* 表單 */
+#form-self {
+    width: 1200px;
+    padding: 30px;
+    background: #f6f6f6;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px auto 150px;
+  }
+
+  #form-self #name, #form-self #email, #form-self #message {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  #form-self ::placeholder {
+    color: #ddd;
+  }
+
+  #form-self #buttons {
+    text-align: center;
+  }
